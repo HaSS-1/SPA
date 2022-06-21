@@ -43,3 +43,12 @@ function PageTransitions() {
 }
 
 PageTransitions();
+
+//Convert adress to google map's link:
+$("address").each(function(){
+    var address = $(this).text().replace(/\,/g, ' '); // get rid of commas
+    var url = address.replace(/\ /g, '%20'); // convert address into approprite URI for google maps
+    
+    $(this).wrap('<a href="http://maps.google.com/maps?q=' + url + '" target="_blank"></a>');
+
+});
