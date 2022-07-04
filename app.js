@@ -52,3 +52,8 @@ $("address").each(function(){
     $(this).wrap('<a href="http://maps.google.com/maps?q=' + url + '" target="_blank"></a>');
 
 });
+
+//Preloader
+$(window).on('load', function() {
+    $('.loader-wrapper').delay(0).fadeOut('slow');
+});
