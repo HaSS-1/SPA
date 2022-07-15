@@ -29,6 +29,7 @@ function PageTransitions() {
                 section.classList.remove('active')
             })
 
+            /* Adding the class active to the element with the id that is passed in. */
             const element = document.getElementById(id);
             element.classList.add('active');
         }
@@ -56,4 +57,18 @@ $("address").each(function(){
 //Preloader
 $(window).on('load', function() {
     $('.loader-wrapper').delay(0).fadeOut('slow');
+});
+
+const box = document.getElementById('name');
+
+const textDiv = document.getElementById('f-name');
+
+// Change text color on mouseover
+box.addEventListener('mouseover', function handleMouseOver() {
+  textDiv.style.color = '#454e56';
+});
+
+//Change text color back on mouseout
+box.addEventListener('mouseout', function handleMouseOut() {
+  textDiv.style.color = '';
 });

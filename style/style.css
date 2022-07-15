@@ -305,7 +305,7 @@ section {
   font-size: 3rem;
 }
 
-.header-content .right-header .name span {
+.header-content .right-header .name .f-name {
   color: var(--color-secondary);
 }
 
@@ -1019,6 +1019,7 @@ section {
   text-align: center;
   font-size: 1rem;
   margin-top: 50px;
+  right: 4%;
 }
 
 #workingon span {
@@ -1032,7 +1033,7 @@ section {
   background: rgba(255, 255, 255, 0.7);
   border: 2px solid var(--color-secondary);
   border-radius: 50px;
-  margin: 40px auto;
+  margin: 20px auto;
   -webkit-box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.8);
           box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.8);
 }
@@ -1047,7 +1048,7 @@ section {
   background: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(50%, #f1f1f1), color-stop(51%, #e1e1e1), to(#f6f6f6));
   background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
   -webkit-animation: wiggle 5s ease-in-out infinite;
           animation: wiggle 5s ease-in-out infinite;
 }
