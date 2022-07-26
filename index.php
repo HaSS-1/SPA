@@ -476,7 +476,6 @@
         <!-----------------------------===Blog Section End===------------------------------->
 
         <!-----------------------------===Contact Section Start===------------------------------->
-        
         <section class="section sec5 contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
