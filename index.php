@@ -1,3 +1,6 @@
+<?php
+    include "config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,23 +46,23 @@
             </div>
             <div class="right-header">
                 <div id="name">
-                    <h1 class="name">Bonjour <span class="hand">👋🏻</span></br>Je m'apelle <span class="f-name" id="f-name">Hassan TAJIRI</span> Je suis
-                        Développeur Web
+                    <h1 class="name"><?php echo $lang['greeting']?><span class="hand">👋🏻</span></br><?php  echo $lang['name']?> <span class="f-name" id="f-name">
+                        Hassan TAJIRI</span> <?php  echo $lang['job_title']?>
                     </h1>
-                    <p>J'aime apprendre des nouvelles choses a fin de participer a l'evolution de monde de Web
-
+                    <p>
+                    <?php  echo $lang['presentation']?>
                     </p>
                 </div>
                 <div class="btn-con">
                     <a href="cv/Hassan TAJIRI_Developpeur_Web.pdf" class="main-btn" target="_blank"
                         title="cv download link">
-                        <span class="btn-text">Télécharger CV</span>
+                        <span class="btn-text"><?php  echo $lang['resume']?></span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
                 </div>
                 <!-----------------------------===Underconstruction===------------------------------->
                 <div id="workingon">
-                    <span>🚧 : Cette SPA est en cours de réalisation</span>
+                    <span>🚧 <?php  echo $lang['warning']?></span>
                     <br>
                     <div id="loading">
                         <div id="wiggle"></div>
@@ -596,6 +599,7 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
+    
 
 </body>
 
